@@ -10,6 +10,6 @@
 - FreeMarker
 
 # Run
-- Run Authentication Service: `mvn spring-boot:run`
-- Run Resource Service 1: `mvn spring-boot:run -Dserver.port=8180`
-- Run Resource Service 2: `mvn spring-boot:run -Dserver.port=8280`
+- Run jwt-sso-server: `mvn spring-boot:run`
+- Run jwt-sso-client1: `mvn spring-boot:run -Dserver.port=8180`
+- Run jwt-sso-client2: `mvn spring-boot:run -Dserver.port=8280`
