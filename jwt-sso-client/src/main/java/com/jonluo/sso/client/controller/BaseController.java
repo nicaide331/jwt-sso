@@ -26,7 +26,7 @@ public class BaseController {
 
     @RequestMapping("/logout")
     public String logout(HttpServletResponse httpServletResponse) {
-        CookieUtil.clear(httpServletResponse, envVariable.getJwtTokenCookieName());
+        CookieUtil.clear(httpServletResponse, envVariable.getJwtTokenCookieName(),envVariable.getCookieParentDomain());
         return "redirect:/";
     }
 }

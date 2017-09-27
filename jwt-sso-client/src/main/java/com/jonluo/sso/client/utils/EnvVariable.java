@@ -21,6 +21,17 @@ public class EnvVariable {
     @Value("${services.auth.url}")
     private String authService;
 
+    @Value("${cookie.parent.domain}")
+    private String cookieParentDomain;
+
+    public String getCookieParentDomain() {
+            return cookieParentDomain;
+    }
+
+    public void setCookieParentDomain(String cookieParentDomain) {
+        this.cookieParentDomain = cookieParentDomain;
+    }
+
     public String getJwtTokenCookieName() {
         return jwtTokenCookieName;
     }

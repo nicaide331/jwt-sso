@@ -46,7 +46,8 @@ public class LoginController {
         }
 
         String token = JwtUtil.generateToken(envVariable.getSigningKey(), username);
-        CookieUtil.create(httpServletResponse, envVariable.getJwtTokenCookieName(), token, false, -1, "localhost");
+
+        CookieUtil.create(httpServletResponse, envVariable.getJwtTokenCookieName(), token, false, -1, envVariable.getCookieParentDomain());
 
         return "redirect:" + redirect;
     }

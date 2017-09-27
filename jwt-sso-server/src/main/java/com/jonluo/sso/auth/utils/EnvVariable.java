@@ -19,6 +19,9 @@ public class EnvVariable {
     @Value("${signing.key}")
     private String signingKey;
 
+    @Value("${cookie.parent.domain}")
+    private String cookieParentDomain;
+
 
     public String getJwtTokenCookieName() {
         return jwtTokenCookieName;
@@ -34,5 +37,13 @@ public class EnvVariable {
 
     public void setSigningKey(String signingKey) {
         this.signingKey = signingKey;
+    }
+
+    public String getCookieParentDomain() {
+        return cookieParentDomain;
+    }
+
+    public void setCookieParentDomain(String cookieParentDomain) {
+        this.cookieParentDomain = cookieParentDomain;
     }
 }
