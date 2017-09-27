@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Collections;
 
 /**
- * Created by 钜文 on 2017/9/27.
+ * Created by jonluo on 2017/9/27.
  */
 @Configuration
 public class JwtConfig {
